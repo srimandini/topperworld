@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="Landingpage.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#" class="logo"><img src="1.png"></a>
+			<ul>
+				<li><a href="#"><img src="home.png"></a></li>
+				<li><a href="https://www.drinkmetastesolutions.com/home?msclkid=405313172de01e2dea8b76128d36ae0a">About</a></li>
+				<li><a href="A.jpg">Menu</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>LIFE IS BETTER <br>WITH <span>COFFEE !</span></h2>
+				<P>A cup of coffee lasts only a moment, but it is that moment that makes your day better.</P>
+				<a href="https://www.drinkmetastesolutions.com/home?msclkid=405313172de01e2dea8b76128d36ae0a">Learn More</a>
+			</div>
+			<div class="imgBox">
+				<img src="2.png" class="coffee">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="img5.png" onclick="imgSlider('2.png');changeCircleColor('#581f12')"></li>
+			<li><img src="8.png" onclick="imgSlider('img1.png');changeCircleColor('#b71c1c')"></li>
+			<li><img src="3.png" onclick="imgSlider('img2.png');changeCircleColor('#f9a825')"></li>
+			<li><img src="4.png" onclick="imgSlider('img3.png');changeCircleColor('#d81b60')"></li>
+			<li><img src="6.png" onclick="imgSlider('img4.png');changeCircleColor('#757575')"></li>
+		</ul>
+		<div>
+		<ul class="sci">
+			<li><a href="https://chat.whatsapp.com/"><img src="WhatsApp.png"></a></li>
+			<li><a href="https://www.linkedin.com/company/topperworld/"><img src="linkedin.png"></a></li>
+			<li><a href="https://instagram.com/topperworld.in?igshid=MzRIODBiNWFIZA=="><img src="instagram.png"></a></li>
+		</ul>
+	</div>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.coffee').src=anything;
+		}
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
